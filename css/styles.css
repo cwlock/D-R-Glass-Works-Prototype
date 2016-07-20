@@ -22,13 +22,11 @@ html {
 }
 #service_buttons img {
 	max-width: 100%;
+	margin-bottom: 25px
 }
-#service_buttons .row:nth-child(2) {
-		margin-bottom: 25px;
-}
-#service_buttons .row:nth-child(3) {
+/*#service_buttons .row:nth-child(3) {
 		margin-bottom: 35px;
-}
+}*/
 #more_buttons {
 	background-color: transparent; 
 	border: 3px solid #F78F1E;
@@ -38,6 +36,15 @@ html {
 	width: 246px;
 	height: 70px;
 	margin-bottom: 50px;
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
+}
+#more_buttons:hover {
+	background-color: #F78F1E;
 }
 #team_button {
 	background-color: transparent; 
@@ -48,10 +55,17 @@ html {
 	width: 246px;
 	height: 70px;
 	margin-bottom: 50px;
+	-o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    /* ...and now for the proper property */
+    transition:.5s;
 }
 #hero-mid {
 	background: url("../images/hero/banner_mid_dark_.jpg");
-	
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #hero-mid h1 {
 	font-size: 36pt;
@@ -61,15 +75,28 @@ html {
 	font-size: 18pt;
 	line-height: 27pt;
 	margin-bottom: 35px;
+	max-width: 695px
+}
+#hero-mid button:hover {
+	background-color: #fff;
+	color: #F78F1E;
 }
 @media screen and (min-width: 1000px) {
 	#hero-mid.jumbotron {
 		padding-top: 26px;
 		padding-bottom: 27px;
 	}
+}@media screen and (min-width: 992px) {
+	#hero-mid p {
+		margin: 0 auto;
+		margin-bottom: 35px;
+	}
 }
 @media screen and (max-width: 999px) and (min-width: 768px) {
- 
+	#hero-mid.jumbotron {
+		padding-top: 26px;
+		padding-bottom: 27px;
+	}
 }
 @media screen and (min-width: 768px) {
  

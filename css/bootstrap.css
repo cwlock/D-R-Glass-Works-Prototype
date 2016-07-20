@@ -1606,11 +1606,6 @@ pre code {
     width: 1170px;
   }
 }
-@media (min-width:1440px) {
-	.container {
-		width: 1366px	
-	}
-}
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;
@@ -4368,8 +4363,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     padding-top: 22.5px;
   }
   .FA-header > li > a {
-	padding-bottom: 12px;
-	padding-top: 12px;
+	padding-bottom: 18px;
+	padding-top: 19px;
   }
 }
 .navbar-form {
@@ -4612,6 +4607,12 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 .navbar-inverse .navbar-nav > li > a {
   color: #333;
+  -o-transition:.2s;
+  -ms-transition:.2s;
+  -moz-transition:.2s;
+  -webkit-transition:.2s;
+  /* ...and now for the proper property */
+  transition:.2s;
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
