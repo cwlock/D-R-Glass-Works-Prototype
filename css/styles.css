@@ -15,16 +15,9 @@ header {
 html {
 	background-color: #333;	
 }
-.col-centered {
-    display:inline-block;
-    float:none;
-    /* reset the text-align */
-    text-align:left;
-    /* inline-block space fix */
-    margin-right:-4px;
-}
-.row-centered {
-	text-align: center;	
+.centerBlock {
+	display: table;
+	margin: 0 auto;
 }
 #service_buttons p {
 	font-size: 18px;
@@ -84,6 +77,7 @@ html {
 }
 .testimonial_container {
 	margin-top: 35px;
+	margin-bottom: 50px;
 }
 #hero-mid p {
 	font-size: 18px;
@@ -118,7 +112,12 @@ footer {
 	background-size: cover;
 }
 footer h1 {
-	margin-bottom: 35px	
+	margin-bottom: 35px;
+	margin-top: 50px;
+}
+footer a {
+	text-decoration: none;
+	color: #fff;
 }
 #footer_contact {
 	overflow: hidden;
@@ -147,6 +146,7 @@ footer #footer_drLogo img {
 }
 #footer_info {
 	text-align: center;	
+	padding-bottom: 10px
 }
 @media screen and (min-width: 1000px) {
 	#hero-mid.jumbotron {
