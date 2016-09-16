@@ -15,6 +15,17 @@ header {
 html {
 	background-color: #333;	
 }
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+.row-centered {
+	text-align: center;	
+}
 #service_buttons p {
 	font-size: 18px;
 	padding-bottom: 0;
@@ -71,15 +82,71 @@ html {
 	font-size: 36pt;
 	font-weight: 400;
 }
+.testimonial_container {
+	margin-top: 35px;
+}
 #hero-mid p {
-	font-size: 18pt;
-	line-height: 27pt;
+	font-size: 18px;
+	line-height: 27px;
 	margin-bottom: 35px;
 	max-width: 695px
 }
 #hero-mid button:hover {
 	background-color: #fff;
 	color: #F78F1E;
+}
+#testimonial img {
+	float: left;	
+}
+#testimonial .Testamonial_Credentials {
+	float: left;
+	clear: right;
+	margin-left: 20px;
+	font-weight: 700;
+	font-size: 20px;
+}
+#testimonial .Testimonial_Para {
+	float: left;
+	clear: both;
+	margin-top: 20px;
+	font-size: 18px;
+}
+footer {
+	background: url("../images/hero/banner_footer_dark_.jpg");
+	color: #fff;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+footer h1 {
+	margin-bottom: 35px	
+}
+#footer_contact {
+	overflow: hidden;
+	margin-bottom: 
+}
+#footer_contact img {
+	float: left;
+}
+#footer_contact p {
+	float: left;
+	padding-left: 20px;
+	color: #fff;
+}
+footer #footer_drLogo img {
+	height: 70px;	
+	margin-bottom: 20px
+}
+#footer_nav {
+	list-style: none;
+	text-align: center;
+	margin-bottom: 20px
+}
+#footer_nav li {
+	display: inline;
+	padding: 0 20px;
+}
+#footer_info {
+	text-align: center;	
 }
 @media screen and (min-width: 1000px) {
 	#hero-mid.jumbotron {
